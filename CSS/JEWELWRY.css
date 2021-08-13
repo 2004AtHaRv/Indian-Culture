@@ -1,0 +1,277 @@
+body {
+    background-color: #1b2021;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.logo {
+    float: left;
+    position: relative;
+}
+
+.container {
+    width: 75%;
+    margin: 0 auto;
+    padding-top: 6px;
+}
+
+header {
+    background-color: #d1faff;
+    width: 100%;
+    height: 50px;
+}
+
+nav {
+    position: absolute;
+    left: 19%;
+    margin-top: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    margin-right: 15px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+nav a:hover {
+    color: black;
+    opacity: .5;
+    transition: .3s;
+}
+
+.active:hover {
+    color: #95c623;
+    transition: .3s;
+}
+
+h1 {
+    margin: 50px;
+    font-size: 40px;
+    text-align: center;
+    color: #b6c649;
+}
+
+h2 {
+    margin: 30px;
+    font-size: 30px;
+    text-align: left;
+    color: #5fcae7;
+}
+
+p {
+    margin: 40px;
+    font-size: 25px;
+    text-align: justify;
+    color: #ffcae9;
+    line-height: 1.3;
+}
+
+.image-hover {
+    position: relative;
+    width: 100%;
+}
+
+.image {
+    display: block;
+    width: 1200px;
+    height: 800px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 800px;
+    width: 1200px;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #f3f3f3;
+    margin: auto;
+    cursor: pointer;
+}
+
+.image-hover:hover .overlay {
+    opacity: .85;
+}
+
+.text {
+    color: #283747;
+    font-size: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    cursor: default;
+}
+
+.image1 {
+    display: block;
+    width: 1200px;
+    height: 800px;
+}
+
+.overlay1 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 800px;
+    width: 1200px;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #f3f3f3;
+    margin: auto;
+}
+
+.image-hover:hover .overlay1 {
+    opacity: .85;
+}
+
+.text1 {
+    color: #283747;
+    font-size: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    cursor: default;
+}
+
+.image2 {
+    display: block;
+    width: 1200px;
+    height: 800px;
+}
+
+.overlay2 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 800px;
+    width: 1200px;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #f3f3f3;
+    margin: auto;
+}
+
+.image-hover:hover .overlay2 {
+    opacity: .85;
+}
+
+.text2 {
+    color: #283747;
+    font-size: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    cursor: default;
+}
+
+.image3 {
+    display: block;
+    width: 1200px;
+    height: 800px;
+}
+
+.overlay3 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 800px;
+    width: 1200px;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #f3f3f3;
+    margin: auto;
+}
+
+.image-hover:hover .overlay3 {
+    opacity: .85;
+}
+
+.text3 {
+    color: #283747;
+    font-size: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    cursor: default;
+}
+
+.image4 {
+    display: block;
+    width: 1200px;
+    height: 800px;
+}
+
+.overlay4 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 800px;
+    width: 1200px;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #f3f3f3;
+    margin: auto;
+}
+
+.image-hover:hover .overlay4 {
+    opacity: .85;
+}
+
+.text4 {
+    color: #283747;
+    font-size: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    cursor: default;
+}
+
+footer {
+    display: flex;
+    justify-content: flex-end;
+    padding: 16px
+}
+
+#scrollToTopBtn {
+    background-color: #fff;
+    border: none;
+    border-radius: 50%;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 48px;
+    width: 48px
+}

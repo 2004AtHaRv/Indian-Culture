@@ -1,0 +1,236 @@
+body {
+    background-color: #000;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.logo {
+    float: left;
+    position: relative;
+}
+
+.container1 {
+    width: 75%;
+    margin: 0 auto;
+    padding-top: 6px;
+}
+
+header {
+    background-color: #90fcf9;
+    width: 100%;
+    height: 50px;
+}
+
+nav {
+    position: absolute;
+    left: 19%;
+    margin-top: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000;
+    margin-right: 15px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+nav a:hover {
+    opacity: .25;
+    transition: .3s;
+}
+
+.active:hover {
+    color: #95c623;
+    transition: .3s;
+}
+
+h1 {
+    font-size: 40px;
+    text-align: center;
+    color: #ff312e;
+    position: relative;
+    text-transform: capitalize;
+}
+
+h2 {
+    margin: 30px;
+    font-size: 35px;
+    text-align: left;
+    color: #746bc7;
+    text-transform: capitalize;
+}
+
+h3 {
+    margin: 50px;
+    font-size: 30px;
+    text-align: left;
+    color: #f64c72;
+}
+
+h4 {
+    margin-left: 70px;
+    margin-right: 40px;
+    font-size: 25px;
+    text-align: justify;
+    color: #ffffff;
+    line-height: 1.3;
+    font-weight: normal;
+}
+
+p {
+    margin: 40px;
+    font-size: 27px;
+    text-align: justify;
+    color: #64cf4f;
+    line-height: 1.3;
+}
+
+.quick-link-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.quick-link-container .quick-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 200px;
+    margin: 30px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    background-color: #eeeeee;
+    box-shadow: 0 0 10px rgba(38, 38, 38, 0.3);
+}
+
+.quick-link-container .quick-link:after {
+    content: "";
+    position: absolute;
+    display: block;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2) 20%, transparent);
+}
+
+.quick-link-container .quick-link a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.5rem;
+    z-index: 2;
+
+}
+
+.quick-link-container .quick-link a:before {
+    content: '';
+    display: block;
+    font-size: 0.9rem;
+}
+
+.quick-link-container .quick-link .background {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    z-index: 1;
+    top: -5%;
+    right: -5%;
+    border-radius: 50%;
+    box-shadow: 3px -7px 28px 0 rgba(38, 38, 38, 0.3);
+    transition: all 0.2s ease-out;
+}
+
+.quick-link-container .quick-link .background:before,
+.quick-link-container .quick-link .background:after {
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    box-shadow: 3px -7px 28px 0 rgba(38, 38, 38, 0.3);
+}
+
+.quick-link-container .quick-link .background:before {
+    width: 250px;
+    height: 250px;
+    left: -5%;
+    top: 25%;
+}
+
+.quick-link-container .quick-link .background:after {
+    width: 100px;
+    height: 100px;
+    left: 20%;
+    top: 50%;
+    background-color: #232882;
+}
+
+.quick-link-container .quick-link:hover .background {
+    top: -15%;
+    right: -15%;
+}
+
+.quick-link-container .quick-link:nth-child(1) {
+    background-color: #42baff;
+}
+
+.quick-link-container .quick-link:nth-child(2) {
+    background-color: #aa25de;
+}
+
+.quick-link-container .quick-link:nth-child(3) {
+    background-color: #ff1f51;
+}
+
+.slider {
+    height: 480px;
+    width: 720px;
+    background: url("../IMAGES/9d6f434a46be56f98f0c674c12e79ec9.jpg");
+    animation: slide 30s infinite;
+    margin: 100px auto;
+    border: solid 10px #df2a39;
+    border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+}
+
+@keyframes slide {
+    25% {
+        background: url("../IMAGES/09bc1f7416e21fda65806fe98e9e2b25.jpg");
+    }
+
+    50% {
+        background: url("../IMAGES/Flower-and-diya-rangoli-design.jpg");
+    }
+
+    75% {
+        background: url("../IMAGES/a6feba6aa34dc27dc98a83213f280c92.jpg");
+    }
+
+    100% {
+        background: url("../IMAGES/9d6f434a46be56f98f0c674c12e79ec9.jpg");
+    }
+}
+
+footer {
+    display: flex;
+    justify-content: flex-end;
+    padding: 16px
+}
+
+#scrollToTopBtn {
+    background-color: white;
+    border: none;
+    border-radius: 50%;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 48px;
+    width: 48px
+}
